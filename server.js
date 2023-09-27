@@ -20,13 +20,14 @@ mongoose.connect(process.env.MONGOURL)
 
 
 //ミドルウェアの設定
+app.use(express.json());
 app.use("/app/users",userRoute);
 app.use("/app/auth",authRoute);
 app.use("/app/post",postRoute);
 
-// app.get("/",(req,res) => {
-//   res.send("hello mern");
-// });
+app.get("/",(req,res) => {
+  res.send("hello express");
+});
 
 app.listen(PORT,() => {
   return console.log("サーバーが起動しました")
