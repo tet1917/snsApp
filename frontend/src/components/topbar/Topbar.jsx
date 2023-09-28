@@ -27,9 +27,10 @@ export default function Topbar() {
             <NotificationsIcon />
             <span className='topbarIconBadge'>2</span>
           </div>
+          <img src="./assets/person/1.jpeg" alt="" className='topbarImg' />
         </div>
       </div>
-      <img src="./assets/person/1.jpeg" alt="" className='topbarImg' />
+
     </div>
   )
 }
